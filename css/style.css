@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*supprimer marge bordure etc*/
+}
+/*  ajustement du logo*/
+.bn {
+    height: 53px;
+    top: 1px;
+    z-index: 3;
+    margin: 0 5% 0 -39%;
+}
+
+
+/* modifications des items */
+ul li {
+    width: 230px;
+    opacity: .8;
+   text-align:center;
+   margin-right: 100px;
+    font-size: 20px;
+    
+}
+
+
+.bg-dark
+{
+    background-color: transparent !important;
+}
+/************** fin de la modifications des items **********************/
+
+/* page web*/
+
+#acceuil {
+    background-image:  url(../img/modeles/background-acceuil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+
+#bcontact
+
+{
+background-image:url(../img/modeles/contact.jpg);
+      background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+       
+}
+
+#modeles
+{
+    background-image: url(../img/modeles/imagesmodeles-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+padding: 50px;
+    
+}
+/******************* fin de la page web************************/
+
+/* formulaire */
+section {
+    display: flex;
+    flex-flow: wrap;
+}
+
+
+#feedback-page {
+    text-align: center;
+}
+
+form {width: 50%;}
+
+#form-main {
+    width: 100%;
+    float: left;
+    padding-top: 0px;
+}
+
+#form-div {
+    background-color: rgba(72, 72, 72, 0.4);
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+   width: 90%;
+    margin: 0 5%;
+    margin-top: 100px;
+
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+    color: #3c3c3c;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 0;
+    line-height: 22px;
+    background-color: #fbfbfb;
+    padding: 13px 13px 13px 54px;
+    margin-bottom: 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.feedback-input:focus {
+    background: #fff;
+    box-shadow: 0;
+    border: 3px solid #3498db;
+    color: #3498db;
+    outline: none;
+    padding: 13px 13px 13px 54px;
+}
+
+.focused {
+    color: #30aed6;
+    border: #30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name {
+    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#name:focus {
+    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-size: 30px 30px;
+    background-position: 8px 5px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#email {
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#email:focus {
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#comment {
+    background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+/*FORMULAIRE*/
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus, {
+    background-color: white;
+}
+
+#button-blue {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    float: left;
+    width: 100%;
+    border: #fbfbfb solid 4px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    font-size: 24px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+#button-blue:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #0493bd;
+}
+
+.submit:hover {
+    color: #3498db;
+}
+
+.ease {
+    width: 0px;
+    height: 74px;
+    background-color: #fbfbfb;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.submit:hover .ease {
+    width: 100%;
+    background-color: white;
+}
+
+@media only screen and (max-width: 580px) {
+    #form-div {
+        left: 3%;
+        margin-right: 3%;
+        width: 88%;
+        margin-left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+/* MODIFICATIONS COULEUR LIENS*/
+.nav-link:hover
+{
+    color: orangered!important;
+}
+/* MODIFICATIONS DE LA PAGE D ACCEUIL */
+#home
+{
+     color:  rgba(255,255,255,.5)
+}
+
+h1
+{ 
+   text-align: center;
+    padding: 50px;
+    color: #1e90ff;
+    
+} 
+
+h2
+{
+    color: orange;
+    margin-left: 700px;
+    margin-top:  -99px;
+    color: #696969;
+}
+.text1
+{
+    
+    text-align: center;
+    top: 980px;
+}
+/* LA CARTE */
+.maps
+{
+    width: 40%;
+    margin: 0 5%;
+    margin-top: 100px;
+}
+/* fin de la modifications de la carte*/
+
+
+
+/*  alignement du formulaire et de la carte   */
+.contact {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+/* fin de lalaignement de la carte     */
+
+
+/* media queries   la responsivite de la page contact pour la maps et le formulaire de contact */
+
+@media screen and (max-width:768px){
+    .contact {
+        flex-direction: column;
+        
+    }
+    form {width: 80%;}
+    #form-div, .maps {
+        width: 95%;
+        margin: 25% auto;
+    }
+}
+/* fin de la media querie*/
+
+
+/*  slider  annimation*/
+.slider
+{
+    border: 10px solid #fff;
+    width: 100%;
+    height: 540px;
+  margin-top: -10%;
+    animation: slide 15s infinite;
+}
+@keyframes slide {
+0%{
+    background: url(../img/images-sliders/slide1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+50%{
+    background: url(../img/images-sliders/slide2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+100%{
+    background: url(../img/images-sliders/slide3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+}
+/* fin de lannimations svg*/
+
+/* meedia query pour le slider*/
+@media screen and (max-width:768px){
+
+    .slider{
+        margin-left: 0px;
+    }
+    
+}
+/* fin du media query */
+
+/* modifications du text n2 de la page dacceuil */
+
+
+.text2
+{   
+    color: black;
+    
+}
+/* FIN DE LA MODIFICATION DU TEXT2S*/
+
+
+
